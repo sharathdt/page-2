@@ -1,0 +1,31 @@
+
+.theme-index {
+    .theme-container {
+        margin-bottom: 45px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+    
+    a:hover .card {
+        box-shadow: 0 20px 35px -4px rgba(0, 0, 0, 0.15);
+        transform: translateY(-8px);
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.25em;
+    }
+}
+.red {
+    color: green !important;
+}
+
+.sidebar {
+    .ps-container.ps-active-x>.ps-scrollbar-x-rail, .ps-container.ps-active-y>.ps-scrollbar-y-rail {
+        display: none !important;
+    }
+}

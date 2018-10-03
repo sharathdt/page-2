@@ -1,0 +1,40 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$p-font: 'Lato',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$brand-color: #d62323;
+$gray-color: #555;
+$text-color: #222;
+// Width of the content area
+$k:                1080px;
+$content-width:    960px;
+$on-laptop:        800px;
+$on-palm:          600px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+
+
+//Import
+@import 
+
+        "bootstrap",
+        "paper-dashboard",
+        "browser-mockup",
+        "custom";

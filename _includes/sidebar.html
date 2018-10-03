@@ -1,0 +1,75 @@
+<div class="sidebar" data-color="white" data-active-color="danger">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo">
+        <a href="{{site.baseurl}}/" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-round.png">
+          </div>
+        </a>
+        <a href="{{site.baseurl}}/" class="simple-text logo-normal">
+          Jekyll Themes
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          
+           <li {% if page.url == "/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/">
+              <!-- <i class="nc-icon nc-bank"></i> -->
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+              <p>Featured Themes</p>
+            </a>
+          </li>
+          <li {% if page.url == "/premium/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/premium/">
+             <!-- <i class="fa fa-th-large" aria-hidden="true"></i> -->
+             <i class="fa fa-money" aria-hidden="true"></i>
+              <p>Premium Themes</p>
+            </a>
+          </li>
+          <li {% if page.url == "/free/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/free/">
+              <!-- <i class="fa fa-cubes" aria-hidden="true"></i> -->
+              <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+              <p>Free Themes</p>
+            </a>
+          </li {% if page.url == "/categories/" %}class="active"{% endif %}>
+          <li>
+            <a href="{{site.baseurl}}/categories/">
+              <i class="fa fa-cubes" aria-hidden="true"></i>
+              <p>Categories</p>
+            </a>
+          </li>
+          <li {% if page.url == "/blog/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/blog/">
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+              <p>Blog</p>
+            </a>
+          </li>
+          <li {% if page.url == "/submit/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/submit/">
+              <i class="fa fa-upload" aria-hidden="true"></i>
+              <p>Submit Theme</p>
+            </a>
+          </li>
+          <li {% if page.url == "/get-updates/" %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}/get-updates/">
+              <i class="fa fa-paper-plane-o red" aria-hidden="true"></i>
+              <p>Get Updates</p>
+            </a>
+          </li>
+          
+          <!-- <li class="active-pro">
+            <a href="./upgrade.html">
+              <i class="nc-icon nc-spaceship"></i>
+              <p>Upgrade to PRO</p>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>

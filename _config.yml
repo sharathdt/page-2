@@ -1,0 +1,15 @@
+title: Jekyll Themes
+
+include:
+    - _pages
+    
+    
+    
+sass:
+  style: compressed
+  
+  
+collections:
+    blog:
+        output: true
+        permalink: /blog/:path/
