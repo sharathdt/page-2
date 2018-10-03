@@ -1,0 +1,29 @@
+---
+title: Featured Jekyll Themes
+layout: default
+---
+
+<div class="row theme-index">
+{% for post in site.posts %}
+    <div class="col-md-4 themes">
+    <a href="{{post.url}}">
+    <div class="theme-container">
+    <div class="card">
+     <div class="browser-mockup">
+         <img src="{{site.baseurl}}/images/{{post.image}}" alt="{{post.title}}">
+     </div>
+    </div>
+    <h2>{{post.title}}</h2>
+    <p>A {{post.categories | join: ', '}} jekyll theme</p>
+    </div>
+    </a>
+    </div>
+{% endfor %}
+</div>
+
+
+<a href="#" id="loadMore">Load More</a>
+<p class="totop"> 
+    <a href="#top">Back to top</a> 
+</p>
+

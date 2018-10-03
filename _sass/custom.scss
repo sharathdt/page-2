@@ -11,7 +11,7 @@
     
     a:hover .card {
         box-shadow: 0 20px 35px -4px rgba(0, 0, 0, 0.15);
-        transform: translateY(-8px);
+        transform: translateY(-2px);
     }
     
     h2 {
@@ -19,6 +19,14 @@
         font-weight: bold;
         margin-bottom: 0.25em;
     }
+    
+    .browser-mockup {
+        img {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+    }
+    
 }
 .red {
     color: green !important;
@@ -28,4 +36,8 @@
     .ps-container.ps-active-x>.ps-scrollbar-x-rail, .ps-container.ps-active-y>.ps-scrollbar-y-rail {
         display: none !important;
     }
+}
+
+.navbar.navbar-absolute {
+    z-index: 0 !important;
 }
