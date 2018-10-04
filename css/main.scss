@@ -2,7 +2,8 @@
 ---
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
-$p-font: 'Lato',"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font: 'metropolisregular';
+$h-font: 'metropolissemi_bold';
 $brand-color: #d62323;
 $gray-color: #555;
 $text-color: #222;
@@ -33,6 +34,8 @@ $on-palm:          600px;
 
 //Import
 @import 
+        "loader",
+        "fonts",
         "bootstrap",
         "paper-dashboard",
         "browser-mockup",

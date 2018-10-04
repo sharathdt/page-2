@@ -8,7 +8,7 @@
   /* box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4); */
   border-top: 2em solid rgba(191, 191, 191, 0.7);
   position: relative;
-  border-radius: 3px 3px 0 0
+  border-radius: 3px 3px 0 0;
 }
 
 .browser-mockup:before {
@@ -61,6 +61,8 @@
   flex: 1;
 }
 
-img {
-  width: 100%;
+.post {
+    .browser-mockup {
+        max-width: 400px;
+    }
 }

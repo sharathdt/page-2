@@ -3,4 +3,22 @@ title: Featured Jekyll Themes
 layout: default
 ---
 
-{% include theme-index.html %}
+
+ <div class="row theme-index">
+ {% assign sorted-posts = site.posts | where: "tags","featured" %}
+ {% for post in sorted-posts %}
+  <div class="col-md-4">
+    <a href="{{post.url}}">
+    <div class="theme-container">
+    <div class="card">
+     <div class="browser-mockup">
+         <img src="{{site.baseurl}}/images/{{post.image}}" alt="{{post.title}}">
+     </div>
+    </div>
+    <h2>{{post.title}}</h2>
+    <p>A {{post.categories | join: ', '}} theme.</p>
+    </div>
+    </a>
+    </div>
+    {% endfor %}
+</div>

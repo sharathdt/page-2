@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="">
+<body class="" id="top">
  {% include loader.html %}
  
   <div class="wrapper">
@@ -23,8 +23,11 @@
     </div>
   </div>
   
+
+  
   <!--   Core JS Files   -->
-  <script src="{{site.baseurl}}/assets/js/core/jquery.min.js"></script>
+  <!--   <script src="{{site.baseurl}}/assets/js/core/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="{{site.baseurl}}/assets/js/core/popper.min.js"></script>
   <script src="{{site.baseurl}}/assets/js/core/bootstrap.min.js"></script>
   <script src="{{site.baseurl}}/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
@@ -33,37 +36,24 @@
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="{{site.baseurl}}/assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
 
+  <!-- Load More Button -->
   <script>
-  
-$(function () {
-    $(".themes").slice(0, 9).show();
-    $("#loadMore").on('click', function (e) {
-        e.preventDefault();
-        $(".themes:hidden").slice(0, 9).slideDown();
-        if ($(".themes:hidden").length == 0) {
-            $("#load").fadeOut('slow');
-        }
-        $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 1500);
+    $(function () {
+        $(".themes").slice(0, 9).show();
+        $("#loadMore").on('click', function (e) {
+            e.preventDefault();
+            $(".themes:hidden").slice(0, 9).slideDown();
+            if ($(".themes:hidden").length == 0) {
+                $("#load").fadeOut('slow');
+            }
+            $('html,body').animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        });
     });
-});
-
-$('a[href=#top]').click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 600);
-    return false;
-});
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-        $('.totop a').fadeIn();
-    } else {
-        $('.totop a').fadeOut();
-    }
-});  
   </script>
+  
+  <!-- Loader Potion Fill -->
   <script>
   jQuery(document).ready(function() {
         jQuery(".box-loader").fadeOut("slow");

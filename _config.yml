@@ -1,15 +1,56 @@
+
 title: Jekyll Themes
+description: A collection of free jekyll themes and templates readily available to download.
+url: "https://jekyll-themes.com" 
+enforce_ssl: jekyll-themes.com
+copyrights: "<a target='_blank' href='https://jekyll-themes.com'>Jekyll Themes</a>"
+email: hello@webjeda.com
+permalink: /:title/
+enforce_ssl: jekyll-themes.com
 
 include:
     - _pages
     
     
     
-sass:
-  style: compressed
-  
-  
+    
+analytics: UA-92266803-1
+token: 1a70afb8878766fb2ac25d14037c64dc37474c75
+
+mailchimp-list: '//redgadgets.us10.list-manage.com/subscribe/post?u=210acce5db69d3d4a04b0e25d&amp;id=08c6708f40'
+    
+    
+    
+
 collections:
     blog:
         output: true
         permalink: /blog/:path/
+        
+    premium:
+         output: true
+         permalink: /premium/:path/
+
+
+ref-link: '?ref=webjeda'
+
+
+sass:
+  style: compressed
+
+
+compress_html:
+  clippings: [html, body, div, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, link, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+
+
+plugins: 
+    - jekyll-redirect-from
