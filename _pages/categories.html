@@ -1,0 +1,40 @@
+---
+title: Jekyll Theme Categories
+permalink: /categories/
+layout: default
+---
+
+<h1>Tag Cloud</h1>
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+ <div class="site-category" style="display: inline-block; padding: 5px 10px; background-color: #555; margin-left: 10px; margin-bottom: 20px; border-radius: 4px;">
+    <a style="color: #fff" href="#{{ category | first | slugify }}">
+            {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+    </a>
+</div>
+{% endfor %}
+
+
+{% for category in site.categories reversed %}
+ {% capture category_name %}{{ category | first }}{% endcapture %}
+ <div id="{{ category_name | slugize }}"></div>
+ <h2 class="category-head" style="text-transform: capitalize">{{ category_name }}</h2>
+ <div class="row theme-index">
+ 	{% for post in site.categories[category_name] %}
+ 	<div class="col-md-4 theme-column">
+    <a href="{{post.url}}">
+    <div class="theme-container">
+    <div class="card">
+     <div class="browser-mockup">
+         <img src="{{site.baseurl}}/images/{{post.image}}" alt="{{post.title}}">
+     </div>
+    </div>
+    <h2>{{post.title}}</h2>
+    <p>A {{post.categories | join: ', '}} theme.</p>
+    </div>
+    </a>
+    </div>
+ 	{% endfor %}
+ 
+</div>
+{% endfor %}
