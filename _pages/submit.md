@@ -1,9 +1,12 @@
 ---
 title: Submit Theme
 description: Showcase your theme among hundreds of cherry picked Jekyll themes.
-layout: default
+layout: page
 permalink: /submit/
 ---
+
+
+## How to submit a theme?
 
 Submit your Jekyll theme by sending an email to the below address with the following information.
 
