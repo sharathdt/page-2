@@ -1,0 +1,33 @@
+<script>
+$.getJSON('https://api.github.com/repos/{{page.user}}/{{page.repo}}?access_token={{site.token}}', function(data) {
+
+    $('.stars').append(data.stargazers_count);
+    $('.date').append(data.created_at.split('T')[0]);
+    $(".forks").append(data.forks);
+    $(".desc").append(data.description);
+    $(".arch").attr('href', 'https://github.com/'+ data.owner.login +'/'+ data.name +'/archive/'+ data.default_branch +'.zip');
+    $('.avatar-post-jq').attr('src',  data.owner.avatar_url + '&s=32)');   
+    var hp = data.homepage;    
+    var ck = "http";
+    if( hp != null && hp.indexOf(ck) != -1){
+    $('.demo-post').attr('href', data.homepage);
+    }
+    else {
+    $('.demo-post').attr('href', "http://" + data.homepage);
+    }
+    });
+</script>
+
+
+<script src="/js/jquery.gh-readme.min.js"></script>
+
+<script>
+$(function () {
+    var options = {
+            owner: '{{page.user}}',
+            repo: '{{page.repo}}'
+    };
+    $('#readme').readme(options);
+});
+</script>
+

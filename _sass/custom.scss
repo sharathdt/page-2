@@ -64,3 +64,21 @@
 .text-content {
 	max-width: 800px;
 }
+
+.post {
+	.avatar-post {
+		height: 1em;
+		vertical-align: text-top;
+	}
+}
+
+.primary-light {
+	display: none;
+	font-size: 1em;
+	color: $brand-color;
+}
+
+.badge-dark {
+	background-color: #4a4a4a;
+	font-size: 1em;
+}
