@@ -10,6 +10,7 @@ demo: http://preview.themeforest.net/item/osum-multipurpose-theme-powered-by-jek
 layout: post-premium
 categories:
     - onepage
+tags: featured
 ---
 
 

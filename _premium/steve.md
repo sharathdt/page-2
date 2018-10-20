@@ -12,6 +12,7 @@ categories:
     - minimal
     - cards
     - sidebar
+tags: featured
 ---
 
 <div class="user-html"><h3 id="item-description__overview">Overview</h3>

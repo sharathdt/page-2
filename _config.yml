@@ -54,3 +54,4 @@ compress_html:
 
 plugins: 
     - jekyll-redirect-from
+    - jemoji

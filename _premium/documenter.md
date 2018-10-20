@@ -12,6 +12,7 @@ categories:
     - multipurpose
     - documentation
 published: true
+tags: featured
 ---
 
 <div class="user-html"><p>Documenter is a Jekyll site template for all kinds of Digital product authors. You can make your support forum, documentation site or any knowledge base website by using that template. Do you have an open source project on github, you may use that template without any hesitation.</p>

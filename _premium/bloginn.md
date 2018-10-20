@@ -12,6 +12,7 @@ categories:
     - minimal
     - dark
     - cards
+tags: featured
 ---
 
 

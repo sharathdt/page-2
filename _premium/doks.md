@@ -11,6 +11,7 @@ layout: post-premium
 categories:
     - minimal
     - cards
+tags: featured
 ---
 
 <div class="user-html"><h2 id="item-description__what-is-doks">What is Doks?</h2>

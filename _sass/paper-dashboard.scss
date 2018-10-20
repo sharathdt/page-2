@@ -2321,7 +2321,7 @@ h1,
 .h1 {
   font-size: 3.5em;
   line-height: 1.15;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h1 small,
@@ -2334,13 +2334,13 @@ h1 small,
 h2,
 .h2 {
   font-size: 2.5em;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h3,
 .h3 {
   font-size: 2em;
-  margin-bottom: 30px;
+   margin-bottom: 15px;
   line-height: 1.4em;
 }
 
@@ -2348,7 +2348,7 @@ h4,
 .h4 {
   font-size: 1.714em;
   line-height: 1.45em;
-  margin-top: 30px;
+   margin-bottom: 15px;
   margin-bottom: 15px;
 }
 
@@ -2494,6 +2494,7 @@ a.text-gray:hover {
 body {
   color: #2c2c2c;
   font-size: 14px;
+  font-size: $size;
   font-family: $font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

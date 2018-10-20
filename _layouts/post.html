@@ -2,16 +2,23 @@
 layout: default
 ---
 
-
-
-
-
 <div class="container">
 <div class="post">
 <div class="row">
-    <div class="col-md-6">
+   
+   <div class="col-md-6 order-sm-12">
+       		<a target="_blank" class="demo-post" href="" rel="nofollow noopener noreferrer">
+				<div class="card">
+				 <div class="browser-mockup">
+					 <img src="{{site.baseurl}}/images/{{page.image}}" alt="{{page.title}}">
+				 </div>
+				</div>
+        	</a>
+    </div>
+   
+    <div class="col-md-6 order-sm-1">
     	<h1 class="post-headline">{{page.title}}</h1>
-    	 <p>{{page.title | capitalize}} is a {{page.categories | join: ', '}} jekyll theme developed by <a class="" target="_blank" href="{% if page.dev %}https://github.com/{{page.dev}}/ {% else %}https://github.com/{{page.user}}/{% endif %}">
+    	 <p>{{page.title | capitalize}} is a {{page.categories | join: ', '}} jekyll theme. It is developed by <a class="" target="_blank" href="{% if page.dev %}https://github.com/{{page.dev}}/ {% else %}https://github.com/{{page.user}}/{% endif %}">
           
            	{% if page.dev %}
             <img src="{{page.avatar}}" alt="{{page.dev | capitalize}} - Jekyll Themes Developer" class="avatar-post" title="{{page.dev | capitalize}}">
@@ -24,16 +31,15 @@ layout: default
             {{page.user | capitalize}}
    	  		{% endif %}
           
-   	 	</a>.</p>
-   	 	
-   	 	<p class="desc"></p>
+   	 	</a>. <span class="desc"></span></p>
+
    	 	<br>
 		<span class="badge badge-dark"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;<span class="stars"></span></span>
 		<span class="badge badge-dark"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp;<span class="forks"></span></span>
 		<span class="badge badge-dark"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;<span class="date"></span></span>
 			
 			
- 			<p class="primary-light"><i class="fa fa-star-o" aria-hidden="true"></i>&nbsp;<span class="stars"></span>&nbsp;&nbsp;<i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp;<span class="forks"></span>&nbsp;&nbsp;<i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;<span class="date"></span></p>
+ 			
            <br>
            <br>
             {% if page.demo %}
@@ -43,31 +49,18 @@ layout: default
             {% endif %}
            <a target="_blank" class="btn btn-outline-primary btn-sm" href="https://github.com/{{page.user}}/{{page.repo}}">Repository</a>
            <a rel="nofollow" class="arch btn btn-outline-primary btn-sm" href="">Download</a>
-    	 
-   	 	
-   	 	
-   	 	
-   	 	
-    	 
+
     </div>
-    <div class="col-md-6">
-       <a target="_blank" class="demo-post" href="" rel="nofollow noopener noreferrer">
-    <div class="card">
-     <div class="browser-mockup">
-         <img src="{{site.baseurl}}/images/{{page.image}}" alt="{{page.title}}">
-     </div>
-    </div>
-        </a>
-    </div>
+    
+    
+    
 	
 </div>
 
 <br>
-
    {{content}}
-    <div itemprop="about" id="readme"></div>
-	</div>
-
+    <div itemprop="about" id="readme" style="max-width: 100%"></div>
+</div>
 
 </div>
 
